@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: black;
+}
+
+#progreso-container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+#progreso-barra {
+  height: 100%;
+  width: 0;
+  background-color: #b30000;
+  transition: width 0.3s;
+}
+
+#progreso-texto {
+  text-align: center;
+  margin-top: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+#contenedor-malla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.semestre {
+  border: 2px solid #ffb6c1;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  background-color: #ffeef0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ramo {
+  display: block;
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  background-color: #ffb6c1;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.3s;
+}
+
+.ramo:hover {
+  background-color: #ffa6b8;
+}
+
+.ramo.completado {
+  background-color: #f5e6cc; /* Beige pastel */
+  text-decoration: line-through;
+  color: black;
+}
+
+.ramo.bloqueado {
+  background-color: #e0e0e0;
+  color: gray;
+  cursor: not-allowed;
+}
